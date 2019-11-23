@@ -25,6 +25,8 @@ jobs:
       run: yarn build
     - name: Test
       run: yarn test
+    - name: Verify Version
+      run: node ./.github/scripts/verify-version.js
 
   review-merged:
 
