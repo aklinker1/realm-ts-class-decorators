@@ -17,7 +17,8 @@
   },
   "files": [
     "lib/**/*",
-    "README.md"
+    "README.md",
+    "coverage/badge-*.svg"
   ],
   "repository": "github.com/aklinker1/realm-ts-class-decorators",
   "author": "Aaron Klinker <aaronklinker1@gmail.com>",
