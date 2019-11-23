@@ -3,7 +3,7 @@ name: PR Builder
 on: [push]
 
 jobs:
-  build:
+  review:
 
     runs-on: ubuntu-latest
 
@@ -12,6 +12,26 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
+    - name: Install
+      run: yarn install
+    - name: Lint
+      run: yarn lint
+    - name: Build
+      run: yarn build
+    - name: Test
+      run: yarn test
+
+  review-merged:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: Merge Master
+      run: git merge origin/master
     - name: Install
       run: yarn install
     - name: Lint
