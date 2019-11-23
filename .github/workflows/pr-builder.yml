@@ -3,7 +3,9 @@ name: PR Builder
 on:
   push:
     branches:
-      - !master
+      - '*'
+      - '*/*'
+      - '!master'
 
 jobs:
   review:
