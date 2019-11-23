@@ -16,6 +16,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
+    - name: Install
+      run: yarn install
+    - name: Lint
+      run: yarn lint
+    - name: Test
+      run: yarn test
     - name: Build
       run: yarn build
     - uses: primer/publish@master
