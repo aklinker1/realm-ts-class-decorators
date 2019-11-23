@@ -1,6 +1,9 @@
 name: PR Builder
 
-on: [push]
+on:
+  push:
+    branches:
+      - !master
 
 jobs:
   review:
