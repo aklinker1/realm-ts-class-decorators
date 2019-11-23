@@ -15,7 +15,8 @@
     "node": "10"
   },
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "README.md"
   ],
   "repository": "github.com/aklinker1/realm-ts-class-decorators",
   "author": "Aaron Klinker <aaronklinker1@gmail.com>",
