@@ -20,7 +20,8 @@
   "private": false,
   "scripts": {
     "build": "tsc -p .",
-    "lint": "tslint -p tsconfig.json",
+    "lint": "eslint -c .eslintrc.js src/**/*.ts",
+    "lint:fix": "eslint -c .eslintrc.js --fix src/**/*.ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "test": "jest --config jest.config.js"
   },
