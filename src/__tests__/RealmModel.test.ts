@@ -3,6 +3,10 @@ import RealmModel from '../RealmModel';
 describe('RealmModel', () => {
   const instance = {} as RealmModel;
 
+  it('class type should have "schema"', () => {
+    RealmModel.schema;
+  });
+
   it('type should have "isValid"', () => {
     instance.isValid;
   });
