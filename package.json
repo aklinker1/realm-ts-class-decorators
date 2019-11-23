@@ -1,6 +1,6 @@
 {
   "name": "realm-ts-class-decorators",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Typescript support and class utils for realm-js",
   "keywords": [
     "realm",
@@ -15,7 +15,8 @@
     "node": "10"
   },
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "README.md"
   ],
   "repository": "github.com/aklinker1/realm-ts-class-decorators",
   "author": "Aaron Klinker <aaronklinker1@gmail.com>",
