@@ -2,6 +2,7 @@
   "name": "realm-ts-class-decorators",
   "version": "0.3.2",
   "description": "Typescript support and class utils for realm-js",
+  "homepage": "https://github.com/aklinker1/realm-ts-class-decorators",
   "keywords": [
     "realm",
     "realm-js",
