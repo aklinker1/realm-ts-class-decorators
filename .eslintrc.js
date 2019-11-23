@@ -5,9 +5,14 @@ module.exports =  {
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
   ],
+  plugins: [
+    "only-warn",
+  ],
   parserOptions:  {
     ecmaVersion:  2018,
     sourceType:  'module',
   },
-  rules:  {},
+  rules:  {
+    "@typescript-eslint/no-explicit-any": false,
+  },
 };
