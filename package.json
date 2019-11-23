@@ -1,6 +1,6 @@
 {
   "name": "realm-ts-class-decorators",
-  "version": "0.1.0-BETA",
+  "version": "0.0.0-BETA",
   "description": "Typescript support and class utils for realm-js",
   "keywords": [
     "realm",
