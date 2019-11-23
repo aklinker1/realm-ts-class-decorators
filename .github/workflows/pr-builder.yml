@@ -9,9 +9,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: Install
+      run: yarn install
     - name: Lint
-      run: npm run lint
+      run: yarn lint
     - name: Build
-      run: npm run build
+      run: yarn build
     - name: Test
-      run: npm run test
+      run: yarn test
