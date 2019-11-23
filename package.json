@@ -30,8 +30,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "test": "jest --config jest.config.js",
     "test:watch": "jest --config jest.config.js --watch",
-    "test:coverage": "jest --config jest.config.js --coverage",
-    "test:badges": "yarn test:coverage && jest-coverage-badges"
+    "test:coverage": "jest --config jest.config.js --coverage && jest-coverage-badges"
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
