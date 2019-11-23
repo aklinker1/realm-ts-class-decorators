@@ -2,6 +2,8 @@
 
 ![NPM Version](https://img.shields.io/npm/v/realm-ts-class-decorators) ![License](https://img.shields.io/github/license/aklinker1/realm-ts-class-decorators) ![Issues](https://img.shields.io/github/issues/aklinker1/realm-ts-class-decorators)
 
+![coverage:statement](coverage/badge-statements.svg) ![coverage:branch](coverage/badge-branches.svg) ![coverage:function](coverage/badge-functions.svg) ![coverage:line](coverage/badge-lines.svg)
+
 This is a utility library for :exclamation: ___ONLY___ :exclamation: __react-native__ applications. If you use typescript and use classes to define your models and/or use typescript, this library includes 2 main utilities:
 
 - Better type support for model classes
@@ -37,7 +39,7 @@ There are several things wrong with this for Typescript and class usage in gener
 To work around all these issues and make defining the schema easier, the same `"Person"` class can be defined as:
 
 ```ts
-import RealmModel, { model, property } from 'realm-ts-class-decorators';
+import { RealmModel, model, property } from 'realm-ts-class-decorators';
 
 @model("Person")
 class Person extends RealmModel {
