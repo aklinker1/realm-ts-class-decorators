@@ -4,10 +4,12 @@
 
 ![ ](coverage/badge-statements.svg) ![ ](coverage/badge-branches.svg) ![ ](coverage/badge-functions.svg) ![ ](coverage/badge-lines.svg)
 
-This is a utility library for :exclamation: ___ONLY___ :exclamation: __react-native__ applications. If you use typescript and use classes to define your models and/or use typescript, this library includes 2 main utilities:
+This is a utility library for :exclamation: ___ONLY___ :exclamation: `react-native` applications. If you use classes to define your models and/or use TypeScript as well, this library includes 2 main utilities:
 
 - Better type support for model classes
 - Decorators for models and properties
+
+> This library also works with with plain JavaScript, providing similar typing benefits, along with the decorators
 
 ## Basic Usage
 
@@ -29,7 +31,7 @@ Person.schema = {
 };
 ```
 
-There are several things wrong with this for Typescript and class usage in general:
+However, there are several things wrong with this for TypeScript and class usage in general:
 
 1. The class __needs__ to extend `Realm.Object`
    - Functions like `addListener` or `isValid` on models from `realm.objectForPrimaryKey` will NOT be present (See [realm-js #2430](https://github.com/realm/realm-js/issues/2430) for more info)
@@ -47,14 +49,26 @@ class Person extends RealmModel {
   @property("string") lastName!: string;
 
   get fullName(): string {
-      return `${this.firstName} ${this.lastName}`;
+      return this.firstName + ' ' + this.lastName;
   }
 }
 ```
 
-To add this model to realm, nothing has changed. Simply include the class like realm suggests:
+> The important parts of the code above are that:
+>
+> 1. The class has the `@model()` decorator before it
+> 1. The class itself `extends RealmModel`
+> 1. Every property stored in Realm has the `@property()` decorator before them
+
+To add this model to Realm, nothing has changed! Simply include the class like Realm suggests:
 
 ```ts
 Realm.open({ schema: [Person] })
   .then( /* ... */ );
 ```
+
+## Advanced Usage
+
+For more advanced usage, checkout the [example Star Wars App](https://github.com/aklinker1/realm-ts-class-decorators/tree/master/example)!
+
+Since this library is written in TypeScript, all editors with some form of intellisense should also be able to provide strongly types suggestions for the decorators as well!
