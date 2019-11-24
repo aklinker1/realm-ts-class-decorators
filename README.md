@@ -2,7 +2,7 @@
 
 ![NPM Version](https://img.shields.io/npm/v/realm-ts-class-decorators) ![License](https://img.shields.io/github/license/aklinker1/realm-ts-class-decorators) ![Issues](https://img.shields.io/github/issues/aklinker1/realm-ts-class-decorators)
 
-![](coverage/badge-statements.svg) ![](coverage/badge-branches.svg) ![](coverage/badge-functions.svg) ![](coverage/badge-lines.svg)
+![ ](coverage/badge-statements.svg) ![ ](coverage/badge-branches.svg) ![ ](coverage/badge-functions.svg) ![ ](coverage/badge-lines.svg)
 
 This is a utility library for :exclamation: ___ONLY___ :exclamation: __react-native__ applications. If you use typescript and use classes to define your models and/or use typescript, this library includes 2 main utilities:
 
