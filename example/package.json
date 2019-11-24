@@ -1,0 +1,41 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "10"
+  },
+  "scripts": {
+    "android": "react-native run-android",
+    "android-emulator": "emulator -avd Android_Emulator & adb wait-for-device",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "realm": "^3.4.2",
+    "realm-ts-class-decorators": "^0.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "@types/jest": "^24.0.23",
+    "@types/react": "^16.9.13",
+    "@types/react-native": "^0.60.23",
+    "@types/react-test-renderer": "^16.9.1",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.56.0",
+    "react-native-typescript-transformer": "^1.2.13",
+    "react-test-renderer": "16.9.0",
+    "typescript": "^3.7.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
