@@ -1,6 +1,6 @@
 {
   "name": "realm-ts-class-decorators",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Typescript support and class utils for realm-js",
   "homepage": "https://github.com/aklinker1/realm-ts-class-decorators",
   "keywords": [
