@@ -30,6 +30,7 @@
     "lint": "eslint -c .eslintrc.js src/**/*.ts",
     "lint:fix": "eslint -c .eslintrc.js --fix src/**/*.ts",
     "format": "prettier --write \"src/**/*.ts\"",
+    "pretest": "rm -fr *.realm*",
     "test": "jest --config jest.config.js",
     "test:watch": "jest --config jest.config.js --watch",
     "test:coverage": "jest --config jest.config.js --coverage && jest-coverage-badges"
@@ -49,6 +50,6 @@
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "realm": "^3.4.2"
+    "realm": "^5.0.3"
   }
 }
