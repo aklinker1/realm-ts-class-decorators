@@ -17,6 +17,9 @@
     "axios": "^0.19.0",
     "react": "16.9.0",
     "react-native": "0.61.5",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-keychain": "^6.0.0",
+    "react-native-reanimated": "^1.8.0",
     "realm": "^3.4.2",
     "realm-ts-class-decorators": "^0.3.2"
   },
