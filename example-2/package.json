@@ -1,0 +1,27 @@
+{
+  "name": "example-2",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "start": "yarn build && node lib/index.js",
+    "build": "babel ./src --out-dir lib --extensions \".ts,.tsx\"",
+    "build:watch": "yarn build --watch"
+  },
+  "dependencies": {
+    "realm": "^5.0.4",
+    "realm-ts-class-decorators": "../",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/node": "^13.13.5",
+    "ts-node": "^8.10.1"
+  }
+}

@@ -14,7 +14,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "engines": {
-    "node": "10"
+    "node": ">=10"
   },
   "files": [
     "lib/**/*",
@@ -46,9 +46,10 @@
     "jest-coverage-badges": "^1.1.2",
     "prettier": "^1.19.1",
     "ts-jest": "^24.2.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.2",
+    "realm": "^5.0.4"
   },
-  "dependencies": {
-    "realm": "^3.4.2"
+  "peerDependencies": {
+    "realm": "^5.0.4"
   }
 }
