@@ -6,7 +6,7 @@ type ClassDecorator = (constructor: any) => void;
 type OptionalPropertyType = 'bool?' | 'int?' | 'float?' | 'double?' | 'string?' | 'data?' | 'date?';
 type BasicPropertyType = 'bool' | 'int' | 'float' | 'double' | 'string' | 'data' | 'date';
 interface BasicPropertyConfig {
-  type: BasicPropertyType;
+  type: BasicPropertyType | OptionalPropertyType;
   optional?: boolean;
   default?: any;
   indexed?: boolean;
