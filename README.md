@@ -1,3 +1,5 @@
+This repo is archived, it does not work on modern versions of realm, and is no longer maintained
+
 # Realm TS Class Decorators
 
 ![NPM Version](https://img.shields.io/npm/v/realm-ts-class-decorators) ![License](https://img.shields.io/github/license/aklinker1/realm-ts-class-decorators) ![Issues](https://img.shields.io/github/issues/aklinker1/realm-ts-class-decorators)
