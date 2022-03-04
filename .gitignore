@@ -5,3 +5,8 @@ coverage/clover.xml
 coverage/coverage-final.json
 coverage/coverage-summary.json
 coverage/lcov.info
+*error.log
+/build/
+/Pods/
+*.realm*
+.idea

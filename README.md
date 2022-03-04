@@ -6,12 +6,12 @@ This repo is archived, it does not work on modern versions of realm, and is no l
 
 ![ ](coverage/badge-statements.svg) ![ ](coverage/badge-branches.svg) ![ ](coverage/badge-functions.svg) ![ ](coverage/badge-lines.svg)
 
-This is a utility library for :exclamation: ___ONLY___ :exclamation: `react-native` applications. If you use classes to define your models and/or use TypeScript as well, this library includes 2 main utilities:
+This is a utility library for `react-native` and `node` applications. If you use classes to define your models and/or use TypeScript as well, this library includes 2 main utilities:
 
 - Better type support for model classes
 - Decorators for models and properties
 
-> This library also works with with plain JavaScript, providing similar typing benefits, along with the decorators
+> This library also works with plain JavaScript, providing similar typing benefits, along with the decorators
 
 ## Basic Usage
 
